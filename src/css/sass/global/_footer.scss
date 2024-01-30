@@ -1,0 +1,20 @@
+.footer {
+    background-color: var(--section-bg-2);
+    padding-block: 30px;
+    border-block-start: 1px solid var(--border-color-2);
+    > .container {
+        .copyright {
+            font-size: var(--fs-2);
+            text-align: center;
+            user-select: none;
+            padding: 0px 30px;
+            .link {
+                color: var(--secondray-color);
+                display: inline-block;
+                user-select: none;
+                cursor: pointer;
+                transition: var(--main-transition) ease-in-out;
+            }
+        }
+    }
+}

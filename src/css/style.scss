@@ -1,0 +1,301 @@
+/* === start reyset === */
+@import "sass/global/reyset";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    // transition: var(--main-transition);
+}
+
+// :root {
+//     --main-color: #3498db;
+//     --secondray-color: #85c1e9;
+//     --section-bg-color: #f5f5f5;
+//     --sec2-bg-color: #e5e7e9;
+//     --card-bg: #fff;
+//     --card2-bg: linear-gradient(
+//         135deg,
+//         var(--main-color),
+//         var(--secondray-color)
+//     );
+//     --overlay: rgba(49, 55, 61, 0.671);
+//     --font-color: #000;
+//     // --font2-color: #808080;
+//     --font2-color: #363745d6;
+//     --box-shadow-btn: 0px 0px 10px 2px var(--secondray-color, #85c1e9);
+
+// ===============================
+// --russian-violet: #37244c;
+// // logo
+// --dark-purple: #261e2f;
+// --eerie-black: #18181b;
+// --davys-gray: #575757;
+// // blog
+// --light-gray: #d6d6d6;
+
+// // header navbar
+// --cultured-1: #fafafa;
+// // features item before
+// --cultured-2: #f5f3f6;
+// // section background 2
+// --cultured-3: #f0eef1;
+// // border footer
+// --gainsboro: #d9d8d8;
+// --black_10: #0000001a;
+// --black_5: #0000000d;
+// --pumpkin: #f4742a;
+// // features
+// --white: #ffffff;
+// --black: #000000;
+// // my
+// --section-bg-1: #ffffff;
+// --font-color-1: #fff;
+
+// }
+
+:root {
+    /**
+     * colors
+     */
+    --main-color: #37244c;
+    --secondray-color: #f4742a;
+    --third-color: #261e2f;
+    --gray-color: #575757;
+    --gray-color-2: #575757;
+    // section
+    --section-bg-1: #37244c;
+    --section-bg-2: #f0eef1;
+    --section-bg-3: #fff;
+    // card
+    --card-bg-1: #fff;
+    --card-bg-2: #f5f3f6;
+    // staitc
+    --font-color-1: #fff;
+    --font-color-2: #000;
+    --font-color-3: #18181b;
+    // font
+    --font-color-4: #18181b;
+
+    // border
+    --border-color-1: #f0eef1;
+    --border-color-2: #d9d8d8;
+
+    /**
+     * box shadow
+     */
+    --shadow-1: 0px 0px 20px #0000001a;
+    --shadow-2: 0 0 20px 4px #0000000d;
+
+    // goicon
+    --icon-color: #363745;
+    --container-color: #fafaff;
+
+    /**
+     * typography
+     */
+
+    --ff-poppins: "Poppins", sans-serif;
+    --ff-roboto: "Roboto", sans-serif;
+
+    --fs-1: 3rem;
+    --fs-2: 2rem;
+    --fs-3: 1.5rem;
+    --fs-4: 1.4rem;
+    --fs-5: 1.3rem;
+
+    --fw-900: 900;
+    --fw-700: 700;
+    --fw-600: 600;
+    --fw-500: 500;
+
+    /**
+     * spacing
+     */
+
+    --section-padding: 50px;
+
+    --padding-sc-50: 50px;
+    --padding-sc-100: 100px;
+
+    /**
+     * border radius
+     */
+
+    --radius-6: 6px;
+    --radius-10: 10px;
+
+    /**
+     * transition
+     */
+
+    --transition-1: 0.25s ease;
+    --transition-2: 0.5s ease;
+    --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+    --main-transition: all 0.5s;
+}
+
+// =====================>
+
+body.dark_mode {
+    /**
+     * colors
+     */
+    --main-color: #37244c;
+    --secondray-color: #f4742a;
+    --third-color: #261e2f;
+    --gray-color: #d6d6d6;
+    --gray-color-2: #37244c;
+
+    // section
+    --section-bg-1: #37244c;
+    --section-bg-2: #212f3d;
+    --section-bg-3: #fff;
+
+    // card
+    --card-bg-1: #151515;
+    --card-bg-2: #212f3d;
+    // staitc
+    --font-color-1: #fff;
+    --font-color-2: #000;
+    --font-color-3: #18181b;
+    // font
+    --font-color-4: #fafaff;
+
+    // border
+    --border-color: #f0eef1;
+    --border-color-2: #d9d8d8;
+
+    /**
+     * box shadow
+     */
+    --shadow-1: 0px 0px 20px #0000001a;
+    --shadow-2: 0 0 20px 4px #ffffff14;
+
+    // goicon
+    --icon-color: #363745;
+    --container-color: #fafaff;
+
+    background-color: #151515;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* start global */
+@import "sass/global/global";
+
+/* start goicon */
+@import "sass/global/goicon";
+
+/* start error */
+@import "sass/global/errorpage";
+
+/* start header */
+@import "sass/global/header";
+
+/* start lading */
+@import "sass/global/landing";
+
+/* start lading */
+@import "sass/global/features";
+
+/* start acquaintance */
+@import "sass/global/acquaintance";
+
+/* start about */
+@import "sass/global/about";
+
+/* start downapp */
+@import "sass/global/downapp";
+
+/* start blogs */
+@import "sass/global/blogs";
+
+/* start contact */
+@import "sass/global/contact";
+
+/* start footer */
+@import "sass/global/footer";
+
+// @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+@media (min-width: 768px) {
+    :root {
+        /**
+         * typography
+         */
+
+        --fs-1: 4.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+        /**
+       * spacing
+       */
+
+        --section-padding: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    /**
+     * CUSTOM PROPERTY
+     */
+
+    :root {
+        /**
+       * typography
+       */
+
+        --fs-1: 5rem;
+    }
+}
+
+/* ========== start media Queries =============== */
+
+/* start max 767px */
+@media (max-width: 767px) {
+}
+
+/* start min 768 */
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* start max 991 */
+@media (max-width: 991px) {
+}
+
+/* start min 992 */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* start min 1200 */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+/* ========== end media Queries =============== */

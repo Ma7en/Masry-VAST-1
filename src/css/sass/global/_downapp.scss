@@ -1,0 +1,77 @@
+.downapp {
+    background-color: var(--main-color);
+    color: var(--font-color-1);
+    @media (min-width: 992px) {
+        padding-block: 0;
+        // margin-block-end: 60px;
+    }
+    > .container {
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+        .banner {
+            margin-block-end: 30px;
+            @media (min-width: 575px) {
+                max-width: max-content;
+            }
+            @media (min-width: 992px) {
+                margin-block-end: 0;
+            }
+            @media (min-width: 992px) {
+                transform: translateY(100px);
+            }
+            .w-100 {
+                width: 100%;
+            }
+        }
+        .content {
+            @media (min-width: 992px) {
+                padding-block: var(--section-padding);
+            }
+            .main-title {
+                    text-align: start;
+                .title {
+                    color: var(--white);
+                }
+                @media (min-width: 768px) {
+                    .h2 {
+                        --fs-1: 3.5rem;
+                    }
+                }
+                .subtitle {
+                    color: var(--font-color-1);
+                }
+            }
+            .desc {
+                .text {
+                    margin-block-end: 30px;
+                    font-size: var(--fs-4);
+                    line-height: 1.8;
+                }
+            }
+            .list {
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 10px;
+                .link {
+                    overflow: hidden;
+                    border-radius: var(--radius-10);
+                    .img {
+                        width: 136px;
+                        @media (min-width: 768px) {
+                            width: 150px;
+                        }
+                    }
+                }
+
+                @media (min-width: 768px) {
+                    gap: 20px;
+                }
+            }
+        }
+    }
+}

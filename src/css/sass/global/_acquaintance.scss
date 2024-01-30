@@ -1,0 +1,92 @@
+.acquaintance {
+    background-color: var(--section-bg-2);
+    > .container {
+        @media (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 60px;
+        }
+        .banner {
+            // margin-block-end: 20px;
+            @media (min-width: 992px) {
+                margin-block-end: 0;
+            }
+            .w-100 {
+                width: 100%;
+            }
+        }
+        .content {
+            .main-title {
+                    text-align: start;
+                @media (min-width: 768px) {
+                    .h2 {
+                        --fs-1: 3.5rem;
+                    }
+                }
+            }
+            .desc {
+                .text {
+                    margin-block-end: 25px;
+                    font-size: var(--fs-4);
+                    line-height: 1.8;
+                }
+            }
+            .list {
+                margin-block-end: 35px;
+                .item {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    align-items: flex-start;
+                    gap: 15px;
+                    &:not(:last-child) {
+                        margin-block-end: 25px;
+                    }
+                    .icon {
+                        background-color: var(--secondray-color);
+                        color: var(--font-color-1);
+                        font-size: 20px;
+                        // padding: 12px;
+                        width: 40px;
+                        height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-radius: 50%;
+                        .i {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    .desc {
+                        flex: 1;
+                        .item-title {
+                            margin-block-end: 10px;
+                        }
+                    }
+                }
+            }
+            .btn {
+                color: var(--font-color-1);
+                font-size: var(--fs-4);
+                max-width: var(--width, max-content);
+                padding: 10px 20px;
+                border-radius: var(--radius-10);
+                transition: var(--main-transition) ease-in-out;
+                @media (min-width: 768px) {
+                    font-size: unset;
+                    padding: 15px 30px;
+                }
+                &.btn-secondary:is(:hover, :focus) {
+                    background-color: var(--secondray-color);
+                }
+                &.btn-secondary {
+                    background-color: var(--main-color);
+                }
+            }
+        }
+    }
+}
+
